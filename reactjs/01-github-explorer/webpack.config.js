@@ -31,9 +31,9 @@ module.exports = {
         use: "babel-loader", // sets what will be used for the conversion
       },
       {
-        test: /\.css$/i,
+        test: /\.scss$/i,
         exclude: /node_modules/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
