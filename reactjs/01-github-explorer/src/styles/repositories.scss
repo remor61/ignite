@@ -1,0 +1,30 @@
+section.repository-list {
+  margin: 40px;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      & + li {                  // & stands is the own element (li in this case) and this whole line is saying 
+        margin-top: 20px;       // that the style will be applied to a li that has another li before it.
+      }
+
+      p {
+        font-size: 14px;
+        color: #444;
+        margin-top: 8px;
+      }
+
+      a {
+        display:inline-block;
+        margin-top: 16px;
+        text-decoration: none;
+        color: #8267e6;
+      }
+    }
+  }
+}
